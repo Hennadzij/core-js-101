@@ -134,6 +134,14 @@ function repeatString(value, count) {
  */
 function removeFirstOccurrences(/* str, value */) {
   throw new Error('Not implemented');
+//   const arr = str.split(' ');
+  // const newArr = arr.map((elem, i) => {
+  //   if (elem === value) {
+  //     delete arr[i];
+  //   }
+  //   return elem;
+  // });
+  // return newArr.join(' ');
 }
 
 /**
@@ -147,8 +155,9 @@ function removeFirstOccurrences(/* str, value */) {
  *   '<span>' => 'span'
  *   '<a>' => 'a'
  */
-function unbracketTag(/* str */) {
-  throw new Error('Not implemented');
+function unbracketTag(str) {
+  const a = str.substring(1).slice(0, -1);
+  return a;
 }
 
 
@@ -162,8 +171,8 @@ function unbracketTag(/* str */) {
  *   'Thunderstruck' => 'THUNDERSTRUCK'
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
-function convertToUpperCase(/* str */) {
-  throw new Error('Not implemented');
+function convertToUpperCase(str) {
+  return str.toUpperCase();
 }
 
 /**
@@ -181,8 +190,8 @@ function convertToUpperCase(/* str */) {
  *   ],
  *   'info@gmail.com' => ['info@gmail.com']
  */
-function extractEmails(/* str */) {
-  throw new Error('Not implemented');
+function extractEmails(str) {
+  return str.split(';');
 }
 
 /**
